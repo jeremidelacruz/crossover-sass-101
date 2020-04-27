@@ -9,3 +9,7 @@
 
 ### PROGRAMA DE REFERIDOS
 [programa-referidos.php](http://testbed.raidho.mx/supertasas/programa-referidos.php)
+
+
+### FORMULARIO INVERSION 1
+[formulario-inversion-1.php](http://testbed.raidho.mx/supertasas/formulario-inversion-1.php)
