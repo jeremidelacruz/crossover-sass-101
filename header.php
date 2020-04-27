@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/formulario-inversion.css">
 	<link rel="stylesheet" href="css/index.css">
 	<title>SuperTasas | Home</title>
 </head>

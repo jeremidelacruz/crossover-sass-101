@@ -1,0 +1,39 @@
+/* FORMULARIOS ABRE TU CUENTA */
+
+// GENERAL SETTINGS
+.border-50px
+	+border-radius(50px)
+
+.border-979797-1px
+	border: 1px solid #979797
+
+.cir-120px
+	width: 120px
+	padding-bottom: 120px
+	+border-radius(120px)
+	@media (max-width: $tablet_b)
+		min-width: 80px
+		min-height: 80px
+
+.has-gray-placeholder
+	height: 64px!important
+
+select.first-option-gray
+	option:nth-child(1)
+		color: $c-gray
+
+// TEMPLATE SETTINGS
+.nav-pills
+	padding: 7px
+	.active
+		background-color: $c-blue
+	.disabled
+		color: $c-blue
+		.cir-30x30
+			background-color: $c-gray
+			color: $c-dark-blue
+	.visited
+		color: $c-green
+		.cir-30x30
+			background-color: $c-green
+			color: $c-white

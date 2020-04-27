@@ -1,39 +1,28 @@
-/* FORMULARIOS ABRE TU CUENTA */
+/* STYLE INDEX*/
 
-// GENERAL SETTINGS
-.border-50px
-	+border-radius(50px)
+// BREAKPOINTS
+$wide_b: 1920px
+$large_b: 1440px
+$med_b: 1280px
+$random: 1028px
+$tablet_b: 991px
+$phone_b: 768px
 
-.border-979797-1px
-	border: 1px solid #979797
+// COLORS
+$c-white: #FFFFFF
+$c-black: #000000
+$c-dark-gray: #161616
+$c-gray: #EEEEEE
+$c-light-gray: #F4F6FA
+$c-2C2C2E: #2C2C2E
+$c-dark-blue: #002C66
+$c-blue: #0074FF
+$c-light-blue: #E6ECFF
+$c-green: #00DF82
 
-.cir-120px
-	width: 120px
-	padding-bottom: 120px
-	+border-radius(120px)
-	@media (max-width: $tablet_b)
-		min-width: 80px
-		min-height: 80px
+// LIBRARIES
+/*  BASE  */
+@import mixins
 
-.has-gray-placeholder
-	height: 64px!important
-
-select.first-option-gray
-	option:nth-child(1)
-		color: $c-gray
-
-// TEMPLATE SETTINGS
-.nav-pills
-	padding: 7px
-	.active
-		background-color: $c-blue
-	.disabled
-		color: $c-blue
-		.cir-30x30
-			background-color: $c-gray
-			color: $c-dark-blue
-	.visited
-		color: $c-green
-		.cir-30x30
-			background-color: $c-green
-			color: $c-white
+/*  COMPONENTS */
+@import formulario-inversion-settings

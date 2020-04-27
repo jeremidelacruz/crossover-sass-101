@@ -1,0 +1,54 @@
+/* STYLE INDEX*/
+/*  BASE  */
+/*  COMPONENTS */
+/* FORMULARIOS ABRE TU CUENTA */
+.border-50px {
+  border-radius: 50px;
+}
+
+.border-979797-1px {
+  border: 1px solid #979797;
+}
+
+.cir-120px {
+  width: 120px;
+  padding-bottom: 120px;
+  border-radius: 120px;
+}
+@media (max-width: 991px) {
+  .cir-120px {
+    min-width: 80px;
+    min-height: 80px;
+  }
+}
+
+.has-gray-placeholder {
+  height: 64px !important;
+}
+
+select.first-option-gray option:nth-child(1) {
+  color: #EEEEEE;
+}
+
+.nav-pills {
+  padding: 7px;
+}
+.nav-pills .active {
+  background-color: #0074FF;
+}
+.nav-pills .disabled {
+  color: #0074FF;
+}
+.nav-pills .disabled .cir-30x30 {
+  background-color: #EEEEEE;
+  color: #002C66;
+}
+.nav-pills .visited {
+  color: #00DF82;
+}
+.nav-pills .visited .cir-30x30 {
+  background-color: #00DF82;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=formulario-inversion.css.map */
