@@ -1,6 +1,15 @@
 /* FORMULARIOS ABRE TU CUENTA */
 
 // GENERAL SETTINGS
+input[type="password"]
+	padding: 16px 20px
+	@media (max-width: $tablet_b)
+		height: auto !important
+
+.has-lg-btn
+	@media (min-width: $tablet_b)
+		padding: 17px 74px!important
+
 .border-50px
 	+border-radius(50px)
 
@@ -17,14 +26,78 @@
 
 .has-gray-placeholder
 	height: 64px!important
+	border: none
 
 select.first-option-gray
 	option:nth-child(1)
 		color: $c-gray
 
+.has-tooltip-top
+	.tooltip-box
+		+border-radius(10px)
+		font-size: 18px
+		line-height: 21px
+		color: $c-white
+		position: absolute
+		text-align: left
+		padding: 10px
+		opacity: 0
+		visibility: hidden
+		pointer-events: none
+		left: -40px
+		bottom: 30px
+		width: 270px
+		padding-top: 8px
+		z-index: 1
+		&:after
+			content: ''
+			height: 20px
+			width: 20px
+			background: $c-dark-blue
+			position: absolute
+			+transform(rotate(45deg))
+			bottom: -7px
+			left: 38px
+			z-index: -1
+	&:hover
+		.tooltip-box
+			opacity: 1
+			visibility: visible
+			pointer-events: auto
+	@media (max-width: 990px)
+		right: -10px
+		.tooltip-box
+			font-size: 14px
+			line-height: 18px
+	@media (max-width: $tablet_b)
+		right: 100px
+		.tooltip-box
+			left: inherit
+			right: -30px
+			&:after
+				left: inherit
+				right: 26px
+	@media (max-width: $phone_b)
+		right: 80px
+
+.i-btn-sm
+	bottom: 0
+	cursor: pointer
+	width: 15px
+	height: 15px
+	border: 1px solid $c-dark-blue
+	+border-radius(15px)
+	font-size: 12px
+	text-align: center
+	right: 5px
+	position: absolute
+	line-height: 12.5px
+
 // TEMPLATE SETTINGS
 .nav-pills
-	padding: 7px
+	.pill
+		cursor: default
+		padding-right: 30px!important
 	.active
 		background-color: $c-blue
 	.disabled
