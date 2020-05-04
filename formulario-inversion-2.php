@@ -41,7 +41,7 @@
 			<div class="col-12 mb-4">
 				<p class="c-dark-blue txt36 is-bold">Tus Datos</p>
 			</div>
-			<div class="form-group col-12 form-row">
+			<div class="form-group d-flex align-items-end col-12 form-row">
 				<div class="col-lg-4 mb-lg-3 mb-4">
 					<p class="c-black mb-3">País de Nacimiento</p>
 					<select class="form-control txt18 has-gray-placeholder" name="">
@@ -301,13 +301,13 @@
 					<p class="c-black mb-3">Nacionalidad</p>
 					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Nacionalidad">
 				</div>
-				<div class="col-lg-4 mb-2">
+				<div class="col-lg-4 mb-lg-3 mb-md-4 mb-2">
 					<p class="c-black mb-3">Entidad Federativa de Nacimiento</p>
 					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Entidad Federativa de Nacimiento">
 				</div>
 			</div>
-			<div class="form-group col-12 form-row no-gutters">
-				<div class="col-lg-4 mb-4 row no-gutters">
+			<div class="form-group d-flex align-items-end mb-4 col-12 form-row no-gutters">
+				<div class="col-lg-4 mb-lg-3 mb-4 row no-gutters">
 					<div class="col-12">
 						<p class="c-black mb-3">Fecha de Nacimiento</p>
 					</div>
@@ -486,11 +486,11 @@
 						</select>
 					</div>
 				</div>
-				<div class="col-lg-4 mb-sm-0 mb-2 row no-gutters">
+				<div class="col-lg-4 mb-lg-3 mb-0 row no-gutters">
 					<div class="col-12">
 						<p class="c-black mb-3">Género</p>
 					</div>
-					<div class="col-md-6 pr-md-2 mb-0 mb-3">
+					<div class="col-md-6 pr-md-2 mb-lg-0 mb-3">
 						<select class="form-control txt18 has-gray-placeholder" name="">
 							<option value="a-la-vista">Elige</option>
 							<option value="femenino">Femenino</option>

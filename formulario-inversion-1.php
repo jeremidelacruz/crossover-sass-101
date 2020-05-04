@@ -40,7 +40,7 @@
 			<div class="col-12 mb-4">
 				<p class="c-dark-blue txt36 is-bold">Actividad Económica</p>
 			</div>
-			<div class="form-group col-12 form-row">
+			<div class="form-group d-flex align-items-end col-12 form-row">
 				<div class="col-md-4 mb-lg-3 mb-4">
 					<p class="c-black mb-3">Nombres(s)</p>
 					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Ciudad">
@@ -54,7 +54,7 @@
 					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Apellido Materno *" required>
 				</div>
 			</div>
-			<div class="form-group col-12 form-row">
+			<div class="form-group d-flex align-items-end col-12 form-row">
 				<div class="col-md-4 mb-lg-3 mb-4">
 					<p class="c-black mb-3">Teléfono Celular</p>
 					<input class="form-control txt18 has-gray-placeholder text-left" type="number" name="" placeholder="81 0000 0000">
@@ -69,7 +69,7 @@
 					<input class="form-control txt18 has-gray-placeholder text-left" type="text" name="" placeholder="XXXX-010101-000">
 				</div>
 			</div>
-			<div class="form-group col-12 form-row">
+			<div class="form-group d-flex align-items-end col-12 form-row">
 				<div class="col-md-4 mb-lg-3 mb-4">
 					<div class="position-relative">
 						<p class="c-black mb-3 position-relative">Correo Electrónico</p>
