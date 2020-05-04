@@ -20,7 +20,7 @@
 		<!-- NAVEGACIÓN -->
 		<div class="nav-pills bg-white border-50px d-inline-block mb-5">
 			<div class="d-flex">
-				<div class="pill active c-white border-50px is-bold p-2 txt24">
+				<div class="pill active border-50px is-bold p-2 txt24">
 					<span class="cir-30x30 bg-dark-blue c-white mr-2">1</span> Registro
 				</div>
 				<div class="pill disabled border-50px is-bold p-2 txt24">
@@ -47,11 +47,11 @@
 				</div>
 				<div class="col-md-4 mb-lg-3 mb-4">
 					<p class="c-black mb-3">Apellido paterno*</p>
-					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Apellido Paterno *">
+					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Apellido Paterno *" required>
 				</div>
 				<div class="col-md-4 mb-lg-3 mb-4">
 					<p class="c-black mb-3">Apellido materno*</p>
-					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Apellido Materno *">
+					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Apellido Materno *" required>
 				</div>
 			</div>
 			<div class="form-group col-12 form-row">

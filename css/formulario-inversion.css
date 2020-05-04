@@ -11,6 +11,21 @@ input[type=password] {
   }
 }
 
+.has-gray-placeholder {
+  height: 64px !important;
+  border: none;
+}
+@media (max-width: 991px) {
+  .has-gray-placeholder {
+    padding: 16px 20px !important;
+    height: auto !important;
+  }
+}
+
+select.first-option-gray option:nth-child(1) {
+  color: #EEEEEE;
+}
+
 @media (min-width: 991px) {
   .has-lg-btn {
     padding: 17px 74px !important;
@@ -35,15 +50,6 @@ input[type=password] {
     min-width: 80px;
     min-height: 80px;
   }
-}
-
-.has-gray-placeholder {
-  height: 64px !important;
-  border: none;
-}
-
-select.first-option-gray option:nth-child(1) {
-  color: #EEEEEE;
 }
 
 .has-tooltip-top .tooltip-box {
@@ -129,6 +135,7 @@ select.first-option-gray option:nth-child(1) {
   padding-right: 30px !important;
 }
 .nav-pills .active {
+  color: #FFFFFF;
   background-color: #0074FF;
 }
 .nav-pills .disabled {
@@ -143,7 +150,16 @@ select.first-option-gray option:nth-child(1) {
 }
 .nav-pills .visited .cir-30x30 {
   background-color: #00DF82;
-  color: #FFFFFF;
+  color: transparent;
+  position: relative;
+}
+.nav-pills .visited .cir-30x30:after {
+  content: url("../img/icon-arrow-check-white.svg");
+  top: 1px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
 }
 
 /*# sourceMappingURL=formulario-inversion.css.map */

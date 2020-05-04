@@ -6,6 +6,17 @@ input[type="password"]
 	@media (max-width: $tablet_b)
 		height: auto !important
 
+.has-gray-placeholder
+	height: 64px!important
+	border: none
+	@media (max-width: $tablet_b)
+		padding: 16px 20px!important
+		height: auto !important
+
+select.first-option-gray
+	option:nth-child(1)
+		color: $c-gray
+
 .has-lg-btn
 	@media (min-width: $tablet_b)
 		padding: 17px 74px!important
@@ -23,14 +34,6 @@ input[type="password"]
 	@media (max-width: $tablet_b)
 		min-width: 80px
 		min-height: 80px
-
-.has-gray-placeholder
-	height: 64px!important
-	border: none
-
-select.first-option-gray
-	option:nth-child(1)
-		color: $c-gray
 
 .has-tooltip-top
 	.tooltip-box
@@ -99,6 +102,7 @@ select.first-option-gray
 		cursor: default
 		padding-right: 30px!important
 	.active
+		color: $c-white
 		background-color: $c-blue
 	.disabled
 		color: $c-blue
@@ -109,4 +113,12 @@ select.first-option-gray
 		color: $c-green
 		.cir-30x30
 			background-color: $c-green
-			color: $c-white
+			color: transparent
+			position: relative
+			&:after
+				content: url('../img/icon-arrow-check-white.svg')
+				top: 1px
+				right: 0
+				left: 0
+				margin: auto
+				position: absolute
