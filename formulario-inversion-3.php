@@ -4,12 +4,12 @@
 	<div class="container">
 		<!-- MENSAJE -->
 		<div class="row mb-md-5">
-			<div class="d-flex align-items-center mb-md-5">
-				<div class="col-auto">
+			<div class="d-md-flex align-items-center mb-md-5">
+				<div class="d-inline-block pl-3 pb-md-0 pb-4">
 					<div class="cir-120px border-979797-1px bg-img" style="background-image: url('img/bg-referidos1.png');"></div>
 				</div>
-				<div class="col-auto">
-					<p class="c-blue txt36 is-bold">Abre tu cuenta</p>
+				<div class="d-inline-block pl-md-5 pl-3 pb-md-0 pb-4">
+					<p class="txt36 c-blue is-bold">Abre tu cuenta</p>
 				</div>
 			</div>
 			<div class="col-12">
@@ -37,7 +37,7 @@
 
 		<!-- FORMULARIO -->
 		<form class="form-row">
-			<!-- TUS DATOS -->
+			<!-- ACTIVIDAD ECONÓMICA -->
 			<div class="col-12 mb-4">
 				<p class="c-dark-blue txt36 is-bold">Actividad Económica</p>
 			</div>

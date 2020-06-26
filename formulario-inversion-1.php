@@ -4,16 +4,16 @@
 	<div class="container">
 		<!-- MENSAJE -->
 		<div class="row mb-md-5">
-			<div class="d-flex align-items-center mb-md-5">
-				<div class="col-auto">
+			<div class="d-md-flex align-items-center mb-md-5">
+				<div class="d-inline-block pl-3 pb-md-0 pb-4">
 					<div class="cir-120px border-979797-1px bg-img" style="background-image: url('img/bg-referidos1.png');"></div>
 				</div>
-				<div class="col-auto">
-					<p class="c-blue txt36 is-bold">Abre tu cuenta</p>
+				<div class="d-inline-block pl-md-5 pl-3 pb-md-0 pb-4">
+					<p class="txt36 c-blue is-bold">Abre tu cuenta</p>
 				</div>
 			</div>
 			<div class="col-12">
-				<p class="c-dark-blue">La siguiente información es necesaria para abrir tu cuenta y recopilada por tu seguridad, algunos datos son requeridos paor la Comisión Nacional Bancaria y de Valores.</p>
+				<p class="c-dark-blue max-w-760">La siguiente información es necesaria para abrir tu cuenta y recopilada por tu seguridad, algunos datos son requeridos paor la Comisión Nacional Bancaria y de Valores.</p>
 			</div>
 		</div>
 
@@ -36,7 +36,7 @@
 		</div>
 
 		<!-- FORMULARIO -->
-		<form class="form-row">
+		<form class="form-row needs-validation" novalidate>
 			<div class="col-12 mb-4">
 				<p class="c-dark-blue txt36 is-bold">Actividad Económica</p>
 			</div>
