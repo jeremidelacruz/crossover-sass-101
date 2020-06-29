@@ -1,5 +1,42 @@
 /* FORMULARIOS ABRE TU CUENTA */
 
+// INICIA SESION NAV
+#triggerIniciaSesion
+	position: relative
+	cursor: pointer
+
+.sesion-nav
+	background-color: $c-blue
+	+border-radius(14px)
+	position: fixed
+	height: auto
+	width: 142px
+	padding: 8px 30px 13px 30px
+	visibility: hidden
+	opacity: 0
+	top: 80px
+	@include transition (all ease 0.3s)
+	z-index: 3
+	a
+		border-bottom: 1px solid $c-blue
+		&:hover
+			border-bottom: 1px solid $c-white
+	&:after
+		content: url("../img/icon-dropdown-arrow.svg")
+		height: 20px
+		width: 29px
+		position: absolute
+		transition: all ease 0.3s
+		top: -15px
+		left: 56px
+
+.sesion-nav.show
+	@include transition (all ease 0.3s)
+	visibility: visible
+	opacity: 1
+	top: 80px
+
+
 // GENERAL SETTINGS
 input[type="password"]
 	padding: 16px 20px
@@ -99,6 +136,8 @@ select.first-option-gray
 // TEMPLATE SETTINGS
 .nav-pills
 	.pill
+		font-size: 24px
+		line-height: 29px
 		cursor: default
 		padding-right: 30px!important
 	.active
@@ -122,3 +161,73 @@ select.first-option-gray
 				left: 0
 				margin: auto
 				position: absolute
+	@media (max-width: $med_b)
+		.cir-30x30
+			line-height: 23px
+			font-size: 14px
+			height: 24px
+			width: 24px
+		.pill
+			line-height: 20px
+			font-size: 14px
+	@media (max-width: $tablet_b)
+		.pill
+			display: none
+		.pill.active
+			display: block!important
+
+// CHECKBOX
+/* Hide the browser's default checkbox */
+.label-container2
+	input
+		color: $c-blue
+		position: absolute
+		opacity: 0
+		cursor: pointer
+		height: 20px
+		width: 20px
+		z-index: 1
+	label
+		margin-left: 30px
+
+/* Create a custom checkbox */
+.checkmark-white
+	position: absolute
+	top: 0
+	left: 0
+	height: 20px
+	width: 20px
+	background-color: $c-white
+	border: none
+	+border-radius(4px)
+	@media (max-width: 990px)
+		height: 20px
+		width: 20px
+
+/* When the checkbox is checked, add a blue background */
+.label-container2 input:checked ~ .checkmark-white
+	background-color: $c-white
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-white:after
+	content: ""
+	position: absolute
+	display: none
+
+/* Show the checkmark when checked */
+.label-container2 input:checked ~ .checkmark-white:after
+	display: block
+
+/* Style the checkmark/indicator */
+.label-container2
+	.checkmark-white:after
+		left: 6px
+		top: 2px
+		width: 7px
+		height: 13px
+		border: solid $c-blue
+		border-width: 0 2px 2px 0
+		transform: rotate(45deg)
+		@media (max-width: 990px)
+			left: 7px
+			top: 2px
