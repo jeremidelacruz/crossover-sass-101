@@ -2,50 +2,53 @@
 
 <section class="bg-gray pt-100 pb-100">
 	<div class="container">
-		<!-- MENSAJE -->
-		<div class="row mb-md-5">
-			<div class="d-md-flex align-items-center mb-md-5">
-				<div class="d-inline-block pl-3 pb-md-0 pb-4">
+		<!-- TÍTULO: DATOS PRESONALES -->
+		<div class="row mb-md-5 mb-4">
+			<div class="d-flex flex-wrap align-items-center mb-md-5">
+				<div class="col-md-auto col-12 pl-3 pb-md-0 pb-4">
 					<div class="cir-120px border-979797-1px bg-img" style="background-image: url('img/bg-referidos1.png');"></div>
 				</div>
-				<div class="d-inline-block pl-md-5 pl-3 pb-md-0 pb-4">
-					<p class="txt36 c-blue is-bold">Abre tu cuenta</p>
+				<div class="col-md-auto col-12 pl-md-5 pl-3 pb-md-0 pb-4">
+					<p class="txt36 c-blue is-bold">Datos personales</p>
 				</div>
 			</div>
 			<div class="col-12">
-				<p class="c-dark-blue max-w-760">La siguiente información es necesaria para abrir tu cuenta y recopilada por tu seguridad, algunos datos son requeridos paor la Comisión Nacional Bancaria y de Valores.</p>
+				<p class="c-dark-blue max-w-760">Ingresa tus datos como están escritos en tus documentos oficiales. Recuerda que por el momento el servicio sólo está disponible para personas con nacionalidad mexicana.</p>
 			</div>
 		</div>
 
 		<!-- NAVEGACIÓN -->
-		<div class="nav-pills bg-white border-50px d-inline-block mb-5">
+		<div class="nav-pills bg-white border-50px d-inline-block mb-md-5 mb-4">
 			<div class="d-flex">
 				<div class="pill visited border-50px is-bold p-2 txt24">
-					<span class="cir-30x30 bg-dark-blue c-white mr-2">1</span> Registro
+					<a href="formulario-inversion-1.php"><span class="cir-30x30 bg-dark-blue c-white mr-2">1</span> Registro</a>
 				</div>
 				<div class="pill active border-50px is-bold p-2 txt24">
-					<span class="cir-30x30 bg-dark-blue c-white mr-2">2</span> Tus Datos
+					<a href="formulario-inversion-2.php"><span class="cir-30x30 bg-dark-blue c-white mr-2">2</span> Tus Datos</a>
 				</div>
 				<div class="pill disabled border-50px is-bold p-2 txt24">
-					<span class="cir-30x30 bg-dark-blue c-white mr-2">3</span> Actividad
+					<a href="formulario-inversion-3.php"><span class="cir-30x30 bg-dark-blue c-white mr-2">3</span> Actividad</a>
 				</div>
 				<div class="pill disabled border-50px is-bold p-2 txt24">
-					<span class="cir-30x30 bg-dark-blue c-white mr-2">4</span> Beneficiarios
+					<a href="formulario-inversion-4.php"><span class="cir-30x30 bg-dark-blue c-white mr-2">4</span> Beneficiarios</a>
+				</div>
+				<div class="pill disabled border-50px is-bold p-2 txt24">
+					<a href="formulario-inversion-5.php"><span class="cir-30x30 bg-dark-blue c-white mr-2">5</span> Documentación</a>
 				</div>
 			</div>
 		</div>
 
 		<!-- FORMULARIO -->
-		<form class="form-row">
+		<form class="row needs-validation" novalidate>
 			<!-- TUS DATOS -->
-			<div class="col-12 mb-4">
+			<div class="col-12 mb-md-5 mb-4">
 				<p class="c-dark-blue txt36 is-bold">Tus Datos</p>
 			</div>
-			<div class="form-group d-flex align-items-end col-12 form-row">
+			<div class="d-flex flex-wrap align-items-end w-100 mb-lg-3">
 				<div class="col-lg-4 mb-lg-3 mb-4">
 					<p class="c-black mb-3">País de Nacimiento</p>
-					<select class="form-control txt18 has-gray-placeholder" name="">
-						<option value="a-la-vista">País de Nacimiento</option>
+					<select class="form-control txt18 has-gray-placeholder" name="" required>
+						<option value="">País de Nacimiento</option>
 						<option value="AF">Afghanistan</option>
 						<option value="AX">Åland Islands</option>
 						<option value="AL">Albania</option>
@@ -299,21 +302,21 @@
 				</div>
 				<div class="col-lg-4 mb-lg-3 mb-4">
 					<p class="c-black mb-3">Nacionalidad</p>
-					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Nacionalidad">
+					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Nacionalidad" required>
 				</div>
-				<div class="col-lg-4 mb-lg-3 mb-md-4 mb-2">
+				<div class="col-lg-4 mb-lg-3 mb-4">
 					<p class="c-black mb-3">Entidad Federativa de Nacimiento</p>
-					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Entidad Federativa de Nacimiento">
+					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Entidad Federativa de Nacimiento" required>
 				</div>
 			</div>
-			<div class="form-group d-flex align-items-end mb-4 col-12 form-row no-gutters">
+			<div class="d-flex flex-wrap align-items-end w-100 mb-lg-3">
 				<div class="col-lg-4 mb-lg-3 mb-4 row no-gutters">
 					<div class="col-12">
 						<p class="c-black mb-3">Fecha de Nacimiento</p>
 					</div>
-					<div class="col-md-4 mb-md-0 mb-3 pr-md-2">
-						<select class="form-control txt18 has-gray-placeholder" name="">
-							<option value="a-la-vista">Día</option>
+					<div class="col-4 pr-2">
+						<select class="form-control txt18 has-gray-placeholder" name="" required>
+							<option value="">Día</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -347,26 +350,26 @@
 							<option value="31">31</option>
 						</select>
 					</div>
-					<div class="col-md-4 mb-md-0 mb-3 pr-md-2">
-						<select class="form-control txt18 has-gray-placeholder" name="">
-							<option value="a-la-vista">Mes</option>
-							<option value="a-la-vista">Enero</option>
-							<option value="a-la-vista">Febrero</option>
-							<option value="a-la-vista">Marzo</option>
-							<option value="a-la-vista">Abril</option>
-							<option value="a-la-vista">Mayo</option>
-							<option value="a-la-vista">Junio</option>
-							<option value="a-la-vista">Julio</option>
-							<option value="a-la-vista">Agosto</option>
-							<option value="a-la-vista">Septiembre</option>
-							<option value="a-la-vista">Octubre</option>
-							<option value="a-la-vista">Noviembre</option>
-							<option value="a-la-vista">Diciembre</option>
+					<div class="col-4 pr-2">
+						<select class="form-control txt18 has-gray-placeholder" name="" required>
+							<option value="">Mes</option>
+							<option value="Enero">Enero</option>
+							<option value="Febrero">Febrero</option>
+							<option value="Marzo">Marzo</option>
+							<option value="Abril">Abril</option>
+							<option value="Mayo">Mayo</option>
+							<option value="Junio">Junio</option>
+							<option value="Julio">Julio</option>
+							<option value="Agosto">Agosto</option>
+							<option value="Septiembre">Septiembre</option>
+							<option value="Octubre">Octubre</option>
+							<option value="Noviembre">Noviembre</option>
+							<option value="Diciembre">Diciembre</option>
 						</select>
 					</div>
-					<div class="col-md-4">
-						<select class="form-control txt18 has-gray-placeholder" name="">
-							<option value="a-la-vista">Año</option>
+					<div class="col-4">
+						<select class="form-control txt18 has-gray-placeholder" name="" required>
+							<option value="">Año</option>
 							<option value="2020">2020</option>
 							<option value="2019">2019</option>
 							<option value="2018">2018</option>
@@ -490,16 +493,16 @@
 					<div class="col-12">
 						<p class="c-black mb-3">Género</p>
 					</div>
-					<div class="col-md-6 pr-md-2 mb-lg-0 mb-3">
-						<select class="form-control txt18 has-gray-placeholder" name="">
-							<option value="a-la-vista">Elige</option>
+					<div class="col-md-6 pr-md-2 mb-lg-0 mb-4">
+						<select class="form-control txt18 has-gray-placeholder" name="" required>
+							<option value="">Elige</option>
 							<option value="femenino">Femenino</option>
 							<option value="masculino">Masculino</option>
 						</select>
 					</div>
-					<div class="col-md-6">
-						<select class="form-control txt18 has-gray-placeholder" name="">
-							<option value="a-la-vista">E. Civil</option>
+					<div class="col-md-6 mb-lg-0 mb-4">
+						<select class="form-control txt18 has-gray-placeholder" name="" required>
+							<option value="">E. Civil</option>
 							<option value="0">Soltero/a</option>
 							<option value="1">Casado/a</option>
 							<option value="2">Separado/a</option>
@@ -509,74 +512,74 @@
 					</div>
 				</div>
 			</div>
-			<div class="form-group col-12 form-row">
-				<div class="col-lg-4 mb-lg-3 mb-4">
+			<div class="d-flex flex-wrap align-items-end w-100 ">
+				<div class="col-lg-4 mb-lg-0 mb-4">
 					<div class="position-relative">
 						<p class="c-black mb-3 position-relative">Correo Electrónico</p>
 						<div class="i-btn-sm has-tooltip-top">i
-							<div class="tooltip-box bg-dark-blue txt18">Metodología usada mes a mes para el cáulculo de la tasa de interés.</div>
+							<div class="tooltip-box bg-dark-blue txt18">Con tu cuenta de correo podrás llenar los datos en otro momento.</div>
 						</div>
 					</div>
-					<input class="form-control txt18 has-gray-placeholder text-left" type="text" name="" placeholder="Correo Electrónico">
+					<input class="form-control txt18 has-gray-placeholder text-left" type="email" name="" placeholder="Correo Electrónico" required>
 				</div>
-				<div class="col-lg-4 mb-lg-3 mb-4">
+				<div class="col-lg-4 mb-lg-0 mb-4">
 					<p class="c-black mb-3">Crea una contraseña</p>
-					<input class="form-control txt18 has-gray-placeholder text-left" type="password" name="" placeholder="●●●●●●●●">
+					<input class="form-control txt18 has-gray-placeholder text-left" type="password" name="" placeholder="●●●●●●●●" required>
 				</div>
 			</div>
 
 			<!-- TU DOMICILIO -->
-			<div class="col-12 mb-md-5 mb-4 mt-mb-5 mt-3">
+			<div class="col-12 mb-md-5 mb-4 mt-md-5 mt-0">
 				<p class="c-dark-blue txt36 is-bold mb-3">Tu Domicilio</p>
 				<p class="c-dark-blue max-w-760">En caso de que el domicilio coincida con tu identificación oficial, no es necesario capturarlo.</p>
 			</div>
-			<div class="form-group col-12 form-row">
+			<div class="d-flex flex-wrap align-items-end w-100 mb-md-3">
 				<div class="col-lg-4 mb-lg-3 mb-4">
 					<p class="c-black mb-3">Calle</p>
-					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Calle">
+					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Calle" required>
 				</div>
-				<div class="col-lg-4 mb-md-0 mb-3 row no-gutters">
-					<div class="col-md-6 pr-md-2 mb-0 mb-3">
+				<div class="col-lg-4 row no-gutters mb-lg-3 mb-4">
+					<div class="col-6 pr-2">
 						<p class="c-black mb-3">No. Exterior</p>
-						<input class="form-control txt18 has-gray-placeholder" type="number" name="" placeholder="000">
+						<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="000">
 					</div>
-					<div class="col-md-6">
+					<div class="col-6">
 						<p class="c-black mb-3">No. Interior</p>
-						<input class="form-control txt18 has-gray-placeholder" type="number" name="" placeholder="000">
+						<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="000">
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 mb-lg-3 mb-4">
 					<p class="c-black mb-3">Código Postal</p>
-					<input class="form-control txt18 has-gray-placeholder" type="number" name="" placeholder="00000">
+					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="00000" required>
 				</div>
 			</div>
-			<div class="form-group col-12 form-row no-gutters">
-				<div class="col-lg-4 mb-3">
+			<div class="d-flex flex-wrap align-items-end w-100 mb-md-3">
+				<div class="col-lg-4 mb-lg-3 mb-4">
 					<p class="c-black mb-3">Colonia</p>
-					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Colonia">
+					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Colonia" required>
 				</div>
-				<div class="col-lg-4 mb-3">
+				<div class="col-lg-4 mb-lg-3 mb-4">
 					<p class="c-black mb-3">Municipio</p>
-					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Municipio">
+					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="Municipio" required>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 mb-lg-3 mb-4">
 					<p class="c-black mb-3">País</p>
-					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="País">
+					<input class="form-control txt18 has-gray-placeholder" type="text" name="" placeholder="País" required>
 				</div>
 			</div>
-			<div class="form-group col-12 form-row">
-				<div class="col-lg-4 mb-lg-3">
+			<div class="d-flex flex-wrap w-100 mb-md-3">
+				<div class="col-lg-4 mb-lg-3 mb-4">
 					<p class="c-black mb-3">Entidad Federativa de Nacimiento</p>
-					<input class="form-control txt18 has-gray-placeholder text-left" type="text" name="" placeholder="Entidad Federativa de Nacimiento">
+					<input class="form-control txt18 has-gray-placeholder text-left" type="text" name="" placeholder="Entidad Federativa de Nacimiento" required>
 				</div>
 			</div>
-			<div class="form-group col-12 form-row">
+			<div class="d-flex flex-wrap align-items-end w-100 mb-4">
 				<div class="col-12">
 					<p class="c-black mb-3">¿Cómo te enteraste de SuperTasas?</p>
 				</div>
-				<div class="col-lg-4 mb-lg-3">
+				<div class="col-lg-4 mb-lg-3 mb-4">
 					<select class="form-control txt18 has-gray-placeholder" name="">
-						<option value="a-la-vista">Elige</option>
+						<option value="">Elige</option>
 						<option value="1">Anuncio en autobús</option>
 						<option value="5">Anuncio Facebook</option>
 						<option value="7">Anuncio LinkedIn</option>
@@ -593,8 +596,14 @@
 					</select>
 				</div>
 			</div>
-			<div class="form-group col-12 mt-3">
-				<button class="has-btn has-lg-btn min-w-220 bg-blue c-white m-auto">Siguiente</button>
+			<div class="d-flex flex-wrap w-100 mb-md-3">
+				<div class="col-12 d-flex flex-wrap">
+					<div class="invalid-feedback1 w-100 mb-4" style="display: none;">
+						<p class="txt18 text-danger">Falta llenar campos marcados en rojo</p>
+					</div>
+					<a href='formulario-inversion-1.php' class="has-btn has-lg-btn min-w-220 bg-white has-button-shadow c-black mr-4">Anterior</a>
+					<button class="has-btn has-lg-btn min-w-220 bg-blue c-white">Siguiente</button>
+				</div>
 			</div>
 		</form>
 	</div>

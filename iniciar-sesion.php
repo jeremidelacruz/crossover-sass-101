@@ -18,7 +18,7 @@
 						<input class="form-control txt18 has-gray-placeholder" type="password" name="" placeholder="●●●●●●●●●●" required>
 					</div>
 					<div class="col-12 mb-lg-3 mb-4">
-						<a href="" class="c-blue mb-4 d-block"><strong>¿Olvidaste tu contraseña?</strong></a>
+						<a href="olvide-contrasena.php" class="c-blue mb-4 d-block"><strong>¿Olvidaste tu contraseña?</strong></a>
 						<input class="has-btn bg-blue c-white m-auto" type="submit" value="Iniciar sesión">
 					</div>
 					<div class="col-12 mt-5">
